@@ -117,3 +117,11 @@ This project is for personal and portfolio use.
 <p align="center">
   Built with ☕ Java and 🧠 Mistral
 </p>
+
+
+## Early Features
+
+- Java backend server
+- Ollama LLM integration
+- Basic frontend chat UI
+- API request handling

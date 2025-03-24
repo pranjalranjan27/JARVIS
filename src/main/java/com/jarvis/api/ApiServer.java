@@ -51,6 +51,10 @@ public class ApiServer {
             server.createContext("/chat/history", new ChatHistoryHandler());
             server.createContext("/chat/delete", new DeleteChatHandler());
             server.createContext("/", new StaticFileHandler());  // serve frontend
+
+            System.out.println("Initializing Jarvis API routes...");
+            System.out.println("Chat endpoint active at /chat");        
+            
             server.start();
             System.out.println("Jarvis API server started on port " + PORT);
             System.out.println("Open http://localhost:" + PORT + " in your browser.");
