@@ -125,3 +125,13 @@ This project is for personal and portfolio use.
 - Ollama LLM integration
 - Basic frontend chat UI
 - API request handling
+
+## Chat Persistence
+
+Jarvis now supports persistent SQLite-based chat history.
+
+Features:
+- Multiple chat sessions
+- Saved conversations
+- Chat history restoration
+- Persistent local storage

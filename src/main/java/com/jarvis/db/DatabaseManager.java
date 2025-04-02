@@ -1,5 +1,12 @@
 package com.jarvis.db;
 
+/*
+ * Handles SQLite database operations for:
+ * - chat persistence
+ * - message history
+ * - session management
+ */
+
 import java.sql.*;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

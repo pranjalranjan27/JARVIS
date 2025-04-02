@@ -47,8 +47,12 @@ public class ApiServer {
             server.setExecutor(Executors.newFixedThreadPool(10));
             server.createContext("/chat", new ChatHandler());
             server.createContext("/chat/start", new StartChatHandler());
+
+            // Chat persistence API routes
             server.createContext("/chat/list", new ListChatsHandler());
             server.createContext("/chat/history", new ChatHistoryHandler());
+
+
             server.createContext("/chat/delete", new DeleteChatHandler());
             server.createContext("/", new StaticFileHandler());  // serve frontend
 
