@@ -30,6 +30,8 @@
   var slowTimer    = null;
   var historyOpen  = true;
   var activeRequestToken = 0;
+
+  // Multi-chat session state management
   var currentChatId = null;
   var chatList = [];
   var currentMode = "sarcastic";
@@ -39,6 +41,8 @@
   btnHistory.classList.toggle("sidebar-btn-active", historyOpen);
   updateConnectionStatus(false);
   checkConnection();
+  
+  // Handles switching between multiple chat sessions
   loadChatList();
   injectDeleteModal();
 
@@ -62,6 +66,8 @@
   btnHistory.addEventListener("click", function () {
     historyOpen = !historyOpen;
     btnHistory.classList.toggle("sidebar-btn-active", historyOpen);
+
+    // Handles switching between multiple chat sessions
     renderHistoryList();
   });
 

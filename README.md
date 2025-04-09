@@ -135,3 +135,13 @@ Features:
 - Saved conversations
 - Chat history restoration
 - Persistent local storage
+
+## Multi-Chat Support
+
+Jarvis supports independent chat sessions.
+
+Capabilities:
+- Sidebar chat history
+- Session switching
+- Persistent chat restoration
+- Independent mode selection per chat

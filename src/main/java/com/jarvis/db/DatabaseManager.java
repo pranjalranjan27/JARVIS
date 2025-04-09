@@ -175,7 +175,7 @@ public class DatabaseManager {
             updateTitleIfEmpty(chatId, content);
         }
     }
-
+// Multi-chat database operations
     public List<MessageRecord> getMessages(int chatId) {
         List<MessageRecord> history = new ArrayList<>();
         String sql = "SELECT role, content, mode FROM messages WHERE chat_id = ? ORDER BY id ASC";
