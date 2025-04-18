@@ -145,3 +145,13 @@ Capabilities:
 - Session switching
 - Persistent chat restoration
 - Independent mode selection per chat
+
+## One-Click Startup
+
+Jarvis supports automatic startup using `run.bat`.
+
+Capabilities:
+- Starts backend server automatically
+- Launches frontend UI
+- Opens browser automatically
+- Simplified local setup
