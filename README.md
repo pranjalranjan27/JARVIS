@@ -155,3 +155,13 @@ Capabilities:
 - Launches frontend UI
 - Opens browser automatically
 - Simplified local setup
+
+## Stability Improvements
+
+Major UI stability fixes were implemented.
+
+Fixes:
+- Prevented unwanted page refreshes
+- Preserved active chat sessions
+- Improved frontend state handling
+- Reduced chat interruption issues

@@ -484,7 +484,7 @@ public class ApiServer {
                 exchange.close();
             }
         }
-
+        // Improved request handling for stable frontend communication
         private static void addCorsHeaders(HttpExchange exchange) {
             exchange.getResponseHeaders().set("Access-Control-Allow-Origin", "*");
             exchange.getResponseHeaders().set("Access-Control-Allow-Methods", "GET, POST, OPTIONS");

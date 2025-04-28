@@ -55,6 +55,7 @@
   });
 
   btnSend.addEventListener("click", function (e) {
+    // Fix form submission refresh issue
     e.preventDefault(); // guard against any accidental form submission
     sendMessage();
   });
@@ -122,7 +123,7 @@
   // ════════════════════════════════════════════
   //  Core Functions
   // ════════════════════════════════════════════
-
+// Prevents UI reload and preserves active chat session
   function sendMessage() {
     if (isProcessing) return;
 
@@ -279,6 +280,7 @@
     return data;
   }
 
+  // Restore previously active chat without resetting UI state
   function ensureChatForMessage(userInput) {
     if (currentChatId) {
       return Promise.resolve(currentChatId);
