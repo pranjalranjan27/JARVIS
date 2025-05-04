@@ -349,7 +349,7 @@
   // ════════════════════════════════════════════
   //  Message Rendering
   // ════════════════════════════════════════════
-
+// Render sarcastic conversational responses in chat UI
   function addMessage(role, text) {
     // Render
     if (role === "user") {

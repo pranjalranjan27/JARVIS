@@ -15,7 +15,7 @@ public class IntentDetector {
         SMALL_TALK,
         NONSENSE
     }
-
+// Conversational intent detection for sarcastic interactions
     private static final List<String> COMMAND_VERBS = Arrays.asList(
         "open", "launch", "run", "start", "show", "close", "play",
         "execute", "stop", "shut", "delete", "create", "find",

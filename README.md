@@ -165,3 +165,13 @@ Fixes:
 - Preserved active chat sessions
 - Improved frontend state handling
 - Reduced chat interruption issues
+
+## Personality System
+
+Jarvis now includes a sarcastic conversational personality.
+
+Characteristics:
+- Witty responses
+- Slightly arrogant humor
+- Human-like conversational style
+- Entertaining interactions
