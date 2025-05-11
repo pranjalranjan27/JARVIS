@@ -175,3 +175,14 @@ Characteristics:
 - Slightly arrogant humor
 - Human-like conversational style
 - Entertaining interactions
+
+## Companion Mode
+
+Jarvis includes a supportive companion interaction mode.
+
+Features:
+- Warm conversational tone
+- Emotionally supportive replies
+- Calm and caring interactions
+- Human-like empathetic behavior
+

@@ -102,6 +102,7 @@
   }
 
   function selectMode(mode) {
+    // Companion mode UI state handling
     currentMode = mode;
     // Update button label
     var labels = { sarcastic: "Sarcastic", companion: "Companion", focus: "Focus" };

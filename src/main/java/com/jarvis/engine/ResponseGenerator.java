@@ -7,7 +7,7 @@ package com.jarvis.engine;
  */
 // Sarcastic personality mode response generation
 public class ResponseGenerator {
-
+// Companion mode supportive response behavior
     public ResponseGenerator() {
         // No-op — templates removed, LLM handles responses now
     }
