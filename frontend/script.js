@@ -106,6 +106,7 @@
     currentMode = mode;
     // Update button label
     var labels = { sarcastic: "Sarcastic", companion: "Companion", focus: "Focus" };
+    // Focus mode interaction and productivity behavior handling
     modeSelectorLabel.textContent = labels[mode] || mode;
     // Update active state in dropdown
     document.querySelectorAll(".mode-dropdown-item").forEach(function (el) {
@@ -117,6 +118,7 @@
   document.querySelectorAll(".chip[data-message]").forEach(function (chip) {
     chip.addEventListener("click", function () {
       chatInput.value = chip.getAttribute("data-message");
+      // Optimized rendering for concise technical responses
       sendMessage();
     });
   });

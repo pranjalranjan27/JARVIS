@@ -186,3 +186,12 @@ Features:
 - Calm and caring interactions
 - Human-like empathetic behavior
 
+## Focus Mode
+
+Jarvis includes a productivity-oriented focus mode.
+
+Features:
+- Concise technical responses
+- Better coding assistance
+- Reduced conversational clutter
+- Productivity-focused interactions

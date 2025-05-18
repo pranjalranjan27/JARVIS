@@ -139,6 +139,7 @@ public class IntentDetector {
      * Strips casual/slang prefixes like "bro", "bruh", "dude", "man", "hey"
      * so we can detect the real intent beneath them.
      */
+    // Enhanced technical intent detection for focus mode
     private String stripCasualPrefix(String input) {
         String[] casualPrefixes = {"bro ", "bruh ", "bruhh ", "dude ", "man ", "mate ",
                                    "yo ", "hey ", "come on ", "common ", "come-on ",
