@@ -195,3 +195,13 @@ Features:
 - Better coding assistance
 - Reduced conversational clutter
 - Productivity-focused interactions
+
+## Markdown Rendering
+
+Jarvis supports formatted AI responses.
+
+Supported formatting:
+- Markdown-style bold and italic text
+- Inline code formatting
+- Syntax-style code blocks
+- Structured technical responses

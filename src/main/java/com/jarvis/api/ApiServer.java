@@ -83,6 +83,7 @@ public class ApiServer {
 
                 // Handle CORS preflight
                 if ("OPTIONS".equalsIgnoreCase(exchange.getRequestMethod())) {
+                    // Supports multiline markdown and code-formatted AI responses
                     exchange.sendResponseHeaders(204, -1);
                     return;
                 }

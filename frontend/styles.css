@@ -516,6 +516,7 @@ body {
 }
 
 /* Code blocks inside Jarvis messages */
+/* Syntax-style code block container */
 .code-block-wrap {
   position: relative;
   margin: 12px 0 10px;
@@ -580,6 +581,7 @@ body {
 }
 
 .inline-code {
+  /* Inline code formatting */
   background: rgba(37, 99, 235, 0.12);
   color: #8ec8ff;
   padding: 2px 6px;

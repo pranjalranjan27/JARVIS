@@ -403,6 +403,7 @@
     // Bubble — render with code block formatting
     var bubble = document.createElement("div");
     bubble.className = "msg-jarvis-bubble";
+
     bubble.innerHTML = formatMessageContent(text);
 
     wrap.appendChild(header);
@@ -415,6 +416,7 @@
    * Handles fenced code blocks (```lang\n...\n```) and inline code (`...`).
    * All text is HTML-escaped first to prevent XSS.
    */
+  // Markdown and syntax-style code block rendering
   function formatMessageContent(raw) {
     // Split by fenced code blocks: ```lang\ncode\n```
     var parts = [];
@@ -458,6 +460,7 @@
         textHtml = textHtml.replace(/`([^`]+)`/g, '<code class="inline-code">$1</code>');
 
         // Bold: **text**
+        // Markdown formatting parser for assistant responses
         textHtml = textHtml.replace(/\*\*([^*]+?)\*\*/g, '<strong>$1</strong>');
 
         // Italic: *text* (but not inside <strong> tags or ** pairs)
