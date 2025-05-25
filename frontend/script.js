@@ -22,6 +22,7 @@
   var modeSelectorBtn  = document.getElementById("mode-selector-btn");
   var modeSelectorLabel = document.getElementById("mode-selector-label");
   var modeSelectorChevron = document.getElementById("mode-selector-chevron");
+  // Animated UI handling for personality mode selector
   var modeDropdown     = document.getElementById("mode-dropdown");
   var modeSelectorWrap = document.getElementById("mode-selector-wrap");
 

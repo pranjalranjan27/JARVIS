@@ -205,3 +205,15 @@ Supported formatting:
 - Inline code formatting
 - Syntax-style code blocks
 - Structured technical responses
+
+## UI Redesign
+
+Jarvis now features a redesigned neon dark-blue interface.
+
+Enhancements:
+- Modern futuristic styling
+- Animated dropdown interactions
+- Neon glow effects
+- Improved readability
+- Glassmorphism-inspired components
+- Responsive layout improvements
