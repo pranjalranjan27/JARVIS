@@ -842,6 +842,7 @@ body {
     0 10px 35px rgba(0, 0, 0, 0.5),
     0 0 22px rgba(77, 163, 255, 0.1);
   overflow: hidden;
+  /* Smooth hover reveal for delete actions */
   opacity: 0;
   visibility: hidden;
   transform: translateY(6px) scale(0.97);
@@ -957,7 +958,7 @@ body {
   justify-content: flex-end;
   gap: 10px;
 }
-
+/* Sidebar chat deletion controls */
 .delete-modal-btn {
   padding: 9px 20px;
   border-radius: 10px;

@@ -586,6 +586,7 @@
       deleteBtn.className = "history-delete";
       deleteBtn.title = "Delete chat";
       deleteBtn.innerHTML = '<span class="material-symbols-outlined">close</span>';
+      // Delete confirmation handling for chat history items
       deleteBtn.addEventListener("click", function (e) {
         e.stopPropagation();
         showDeleteModal(chat.id);
@@ -680,7 +681,7 @@
       if (e.target === overlay) hideDeleteModal();
     });
   }
-
+// Handles permanent chat deletion and sidebar refresh
   var pendingDeleteChatId = null;
 
   function showDeleteModal(chatId) {

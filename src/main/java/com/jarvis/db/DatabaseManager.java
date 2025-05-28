@@ -239,6 +239,7 @@ public class DatabaseManager {
      * @param chatId the chat to delete
      * @return true if the chat existed and was removed
      */
+    // Removes chat sessions and associated message history
     public boolean deleteChat(int chatId) {
         try {
             // Delete messages first (no orphans)

@@ -217,3 +217,13 @@ Enhancements:
 - Improved readability
 - Glassmorphism-inspired components
 - Responsive layout improvements
+
+## Chat Management
+
+Jarvis includes chat management functionality.
+
+Features:
+- Permanent chat deletion
+- Confirmation dialog before deletion
+- Automatic sidebar refresh
+- SQLite cleanup for deleted chats

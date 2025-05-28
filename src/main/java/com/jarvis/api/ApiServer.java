@@ -52,7 +52,7 @@ public class ApiServer {
             server.createContext("/chat/list", new ListChatsHandler());
             server.createContext("/chat/history", new ChatHistoryHandler());
 
-
+            // API route for permanent chat deletion
             server.createContext("/chat/delete", new DeleteChatHandler());
             server.createContext("/", new StaticFileHandler());  // serve frontend
 
