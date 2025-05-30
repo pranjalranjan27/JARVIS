@@ -58,7 +58,7 @@ public class ApiServer {
 
             System.out.println("Initializing Jarvis API routes...");
             System.out.println("Chat endpoint active at /chat");        
-            
+            // Final production-ready local API server startup
             server.start();
             System.out.println("Jarvis API server started on port " + PORT);
             System.out.println("Open http://localhost:" + PORT + " in your browser.");

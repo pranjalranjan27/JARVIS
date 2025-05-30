@@ -227,3 +227,18 @@ Features:
 - Confirmation dialog before deletion
 - Automatic sidebar refresh
 - SQLite cleanup for deleted chats
+
+## Final Release Notes
+
+Jarvis evolved from a basic AI assistant prototype into a fully featured local desktop assistant.
+
+Major capabilities:
+- Ollama-powered local AI
+- Multiple personality modes
+- Persistent SQLite chat history
+- Markdown and code rendering
+- Desktop automation commands
+- Neon futuristic interface
+- Multi-session chat management
+- Chat deletion system
+- Responsive frontend/backend architecture
