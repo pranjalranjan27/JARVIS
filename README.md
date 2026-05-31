@@ -7,7 +7,7 @@
 
 # 🤖 J.A.R.V.I.S — AI Desktop Assistant
 
-A local AI desktop assistant with a **neon dark-blue cyberpunk UI**, powered by [Ollama](https://ollama.com/) and the Mistral LLM. Jarvis runs entirely on your machine — no API keys, no cloud, no subscriptions.
+A local AI desktop assistant with a **neon dark-blue cyberpunk UI**, powered by [Ollama](https://ollama.com/) and the Mistral LLM. Jarvis runs entirely on your machine — Runs entirely locally using Ollama and Mistral — private, offline-capable and subscription-free.
 
 ---
 
