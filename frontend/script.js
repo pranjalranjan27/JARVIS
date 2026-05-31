@@ -22,7 +22,6 @@
   var modeSelectorBtn  = document.getElementById("mode-selector-btn");
   var modeSelectorLabel = document.getElementById("mode-selector-label");
   var modeSelectorChevron = document.getElementById("mode-selector-chevron");
-  // Animated UI handling for personality mode selector
   var modeDropdown     = document.getElementById("mode-dropdown");
   var modeSelectorWrap = document.getElementById("mode-selector-wrap");
 
@@ -31,8 +30,6 @@
   var slowTimer    = null;
   var historyOpen  = true;
   var activeRequestToken = 0;
-
-  // Multi-chat session state management
   var currentChatId = null;
   var chatList = [];
   var currentMode = "sarcastic";
@@ -42,8 +39,6 @@
   btnHistory.classList.toggle("sidebar-btn-active", historyOpen);
   updateConnectionStatus(false);
   checkConnection();
-  
-  // Handles switching between multiple chat sessions
   loadChatList();
   injectDeleteModal();
 
@@ -56,7 +51,6 @@
   });
 
   btnSend.addEventListener("click", function (e) {
-    // Fix form submission refresh issue
     e.preventDefault(); // guard against any accidental form submission
     sendMessage();
   });
@@ -68,8 +62,6 @@
   btnHistory.addEventListener("click", function () {
     historyOpen = !historyOpen;
     btnHistory.classList.toggle("sidebar-btn-active", historyOpen);
-
-    // Handles switching between multiple chat sessions
     renderHistoryList();
   });
 
@@ -103,11 +95,9 @@
   }
 
   function selectMode(mode) {
-    // Companion mode UI state handling
     currentMode = mode;
     // Update button label
     var labels = { sarcastic: "Sarcastic", companion: "Companion", focus: "Focus" };
-    // Focus mode interaction and productivity behavior handling
     modeSelectorLabel.textContent = labels[mode] || mode;
     // Update active state in dropdown
     document.querySelectorAll(".mode-dropdown-item").forEach(function (el) {
@@ -119,7 +109,6 @@
   document.querySelectorAll(".chip[data-message]").forEach(function (chip) {
     chip.addEventListener("click", function () {
       chatInput.value = chip.getAttribute("data-message");
-      // Optimized rendering for concise technical responses
       sendMessage();
     });
   });
@@ -127,7 +116,7 @@
   // ════════════════════════════════════════════
   //  Core Functions
   // ════════════════════════════════════════════
-// Prevents UI reload and preserves active chat session
+
   function sendMessage() {
     if (isProcessing) return;
 
@@ -284,7 +273,6 @@
     return data;
   }
 
-  // Restore previously active chat without resetting UI state
   function ensureChatForMessage(userInput) {
     if (currentChatId) {
       return Promise.resolve(currentChatId);
@@ -353,7 +341,7 @@
   // ════════════════════════════════════════════
   //  Message Rendering
   // ════════════════════════════════════════════
-// Render sarcastic conversational responses in chat UI
+
   function addMessage(role, text) {
     // Render
     if (role === "user") {
@@ -404,7 +392,6 @@
     // Bubble — render with code block formatting
     var bubble = document.createElement("div");
     bubble.className = "msg-jarvis-bubble";
-
     bubble.innerHTML = formatMessageContent(text);
 
     wrap.appendChild(header);
@@ -417,7 +404,6 @@
    * Handles fenced code blocks (```lang\n...\n```) and inline code (`...`).
    * All text is HTML-escaped first to prevent XSS.
    */
-  // Markdown and syntax-style code block rendering
   function formatMessageContent(raw) {
     // Split by fenced code blocks: ```lang\ncode\n```
     var parts = [];
@@ -461,7 +447,6 @@
         textHtml = textHtml.replace(/`([^`]+)`/g, '<code class="inline-code">$1</code>');
 
         // Bold: **text**
-        // Markdown formatting parser for assistant responses
         textHtml = textHtml.replace(/\*\*([^*]+?)\*\*/g, '<strong>$1</strong>');
 
         // Italic: *text* (but not inside <strong> tags or ** pairs)
@@ -586,7 +571,6 @@
       deleteBtn.className = "history-delete";
       deleteBtn.title = "Delete chat";
       deleteBtn.innerHTML = '<span class="material-symbols-outlined">close</span>';
-      // Delete confirmation handling for chat history items
       deleteBtn.addEventListener("click", function (e) {
         e.stopPropagation();
         showDeleteModal(chat.id);
@@ -681,7 +665,7 @@
       if (e.target === overlay) hideDeleteModal();
     });
   }
-// Handles permanent chat deletion and sidebar refresh
+
   var pendingDeleteChatId = null;
 
   function showDeleteModal(chatId) {

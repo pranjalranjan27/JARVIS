@@ -1,6 +1,3 @@
-:: Auto-start launcher for Jarvis backend and frontend
-:: Starts local API server and opens UI automatically
-
 @echo off
 setlocal
 echo ══════════════════════════════════════════
@@ -22,8 +19,6 @@ echo ═════════════════════════
 echo   Launching J.A.R.V.I.S...
 echo ══════════════════════════════════════════
 REM Start Ollama in background (safe to run even if already running)
-
-:: Start backend API server
 start "" /B ollama serve
 
 REM Start backend silently — JarvisApp will wait for Ollama internally
@@ -33,8 +28,6 @@ REM Wait for Ollama + Jarvis to be ready (JarvisApp retries Ollama for up to 15s
 timeout /t 18 /nobreak >nul
 
 REM Open browser
-
-:: Launch Jarvis frontend UI
 start "" "http://localhost:8080"
 echo Jarvis is running. Close this window to stop the backend.
 endlocal

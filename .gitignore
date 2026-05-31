@@ -48,31 +48,3 @@ cache/
 # ── Node (if added later) ──
 node_modules/
 package-lock.json
-
-
-# Node modules
-node_modules/
-
-# Logs
-*.log
-
-# IDE files
-.vscode/
-.idea/
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# Java build output
-target/
-out/
-*.class
-
-# Temporary/cache
-temp/
-cache/
-
-# Local environment files
-.env
-.env.local

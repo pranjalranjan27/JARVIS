@@ -47,18 +47,10 @@ public class ApiServer {
             server.setExecutor(Executors.newFixedThreadPool(10));
             server.createContext("/chat", new ChatHandler());
             server.createContext("/chat/start", new StartChatHandler());
-
-            // Chat persistence API routes
             server.createContext("/chat/list", new ListChatsHandler());
             server.createContext("/chat/history", new ChatHistoryHandler());
-
-            // API route for permanent chat deletion
             server.createContext("/chat/delete", new DeleteChatHandler());
             server.createContext("/", new StaticFileHandler());  // serve frontend
-
-            System.out.println("Initializing Jarvis API routes...");
-            System.out.println("Chat endpoint active at /chat");        
-            // Final production-ready local API server startup
             server.start();
             System.out.println("Jarvis API server started on port " + PORT);
             System.out.println("Open http://localhost:" + PORT + " in your browser.");
@@ -83,7 +75,6 @@ public class ApiServer {
 
                 // Handle CORS preflight
                 if ("OPTIONS".equalsIgnoreCase(exchange.getRequestMethod())) {
-                    // Supports multiline markdown and code-formatted AI responses
                     exchange.sendResponseHeaders(204, -1);
                     return;
                 }
@@ -485,7 +476,7 @@ public class ApiServer {
                 exchange.close();
             }
         }
-        // Improved request handling for stable frontend communication
+
         private static void addCorsHeaders(HttpExchange exchange) {
             exchange.getResponseHeaders().set("Access-Control-Allow-Origin", "*");
             exchange.getResponseHeaders().set("Access-Control-Allow-Methods", "GET, POST, OPTIONS");

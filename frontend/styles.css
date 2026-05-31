@@ -9,8 +9,7 @@
   margin: 0;
   padding: 0;
 }
-/* Neon dark-blue Jarvis interface theme */
-/* Final production UI theme refinements */
+
 body {
   font-family: 'Manrope', sans-serif;
   background: linear-gradient(180deg, #070b14 0%, #0a1020 100%);
@@ -62,7 +61,6 @@ body {
 /* ═══════════════════════════════════════════
    Sidebar
    ═══════════════════════════════════════════ */
-   /* Sidebar styling for persistent chat navigation */
 .sidebar {
   position: fixed;
   left: 0;
@@ -518,7 +516,6 @@ body {
 }
 
 /* Code blocks inside Jarvis messages */
-/* Syntax-style code block container */
 .code-block-wrap {
   position: relative;
   margin: 12px 0 10px;
@@ -583,7 +580,6 @@ body {
 }
 
 .inline-code {
-  /* Inline code formatting */
   background: rgba(37, 99, 235, 0.12);
   color: #8ec8ff;
   padding: 2px 6px;
@@ -774,7 +770,6 @@ body {
 /* ═══════════════════════════════════════════
    Mode Selector (custom dropdown)
    ═══════════════════════════════════════════ */
-   /* Animated personality mode selector */
 .mode-selector-wrap {
   position: relative;
   display: flex;
@@ -799,7 +794,7 @@ body {
   outline: none;
   transition: all 0.25s ease;
 }
-/* Neon hover transitions and glow effects */
+
 .mode-selector-btn:hover {
   background: rgba(30, 55, 100, 0.5);
   border-color: rgba(77, 163, 255, 0.4);
@@ -843,7 +838,6 @@ body {
     0 10px 35px rgba(0, 0, 0, 0.5),
     0 0 22px rgba(77, 163, 255, 0.1);
   overflow: hidden;
-  /* Smooth hover reveal for delete actions */
   opacity: 0;
   visibility: hidden;
   transform: translateY(6px) scale(0.97);
@@ -959,7 +953,7 @@ body {
   justify-content: flex-end;
   gap: 10px;
 }
-/* Sidebar chat deletion controls */
+
 .delete-modal-btn {
   padding: 9px 20px;
   border-radius: 10px;

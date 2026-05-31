@@ -8,7 +8,7 @@ import com.jarvis.llm.OllamaService;
  * Starts the API server with startup diagnostics.
  */
 public class JarvisApp {
-// Application entry point for Jarvis local server startup
+
     public static void main(String[] args) {
         System.out.println("[JARVIS] Initializing...");
 
